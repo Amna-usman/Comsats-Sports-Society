@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMSATS SPORTS SOCIETY</title>
+  <link rel="icon" href="favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="container-fluid bg-dark">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <div class="container-fluid ">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand ms-5 mt-lg-0">
+          <img src="logo.png" width="100" alt="SPORTS" />
+        </a>
+        <ul class="nav nav-pills ms-5" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="pills-home-tab" href="index.html" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active ms-3" id="pills-home-tab" href="event.html" role="tab" aria-controls="pills-home" aria-selected="true">Event</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active ms-3" id="pills-home-tab" href="contact.html" role="tab" aria-controls="pills-home" aria-selected="true">Contact</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active ms-3" id="pills-home-tab" href="venue.html" role="tab" aria-controls="pills-home" aria-selected="true">Venue</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"></div>
+          <div class="tab-pane fade" id="pills-venue" role="tabpanel" aria-labelledby="pills-venue-tab"></div>
+        </div>
+      </div>
+      <div class="btns me-5">
+        <a href="login.html" target="_self">
+          <button type="button" class="btn btn-success">Login</button>
+        </a>
+        <a href="register.html" target="_self">
+          <button type="button" class="btn btn-primary">Register</button>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Hero Section -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+    <div class="carousel-inner">
+      <div class="carousel-item active opacity-50">
+        <img src="slide1.jpeg" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-flex justify-content-center align-items-center" style="top: -30%;">
+          <div class="text-center">
+            <h1 class="display-1 fw-bold animate animate__heartBeat">Cricket Gala</h1>
+            <p class="fs-2 fw-semibold animate__heartBeat">meet at cricket camp enjoy glamour</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item opacity-50">
+        <img src="slide2.jpg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-flex justify-content-center align-items-center" style="top: -30%;">
+          <div class="text-center">
+            <h1 class="display-1 fw-bold text-warning animate animate__heartBeat">InterDepartmental</h1>
+            <h1 class="display-6 fw-bold  text-white animate animate__heartBeat">Competitions</h1>
+
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item opacity-50">
+        <img src="Slide 3.jpg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-flex justify-content-center align-items-center" style="top: -30%;">
+          <div class="text-center">
+            <h1 class="display-1 fw-bold  animate animate__heartBeat">Cultural</h1>
+            <h1 class="display-6 fw-bold  text-white animate animate__heartBeat">Festive</h1>
+
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item opacity-50">
+        <img src="slide4.jpg" class="d-block w-100" alt="Slide 4">
+        <div class="carousel-caption d-flex justify-content-center align-items-center" style="top: -30%;">
+          <div class="text-center">
+            <h1 class="display-1 fw-bold text-warning animate animate__heartBeat">Car Show</h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <!--Performer-->
+  <h1 class="display-5 fw-bold  text-white  animate__heartBeat mt-5 ms-5">Organizers</h1>
+  <div class="cards mt-5 container">
+    <div class="card border border-dark w-25">
+      <img class="card-img-top animate animate__bounceOut" src="Slide4.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title fs-5">IEEE</h5>
+        <p class="card-text">Promotes technological innovation and excellence for the benefit of humanity</p>
+        <a href="#" class="btn btn-secondaryy">Contact</a>
+      </div>
+    </div>
+    <div class="card border border-dark w-25">
+      <img class="card-img-top animate animate__bounceOut" src="Slide 3.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title fs-5">CSS Society</h5>
+        <p class="card-text">Focuses on computer science and coding, fostering student development in tech</p>
+        <a href="#" class="btn btn-secondary">Contact</a>
+      </div>
+
+    </div>
+    <div class="card border border-dark w-25">
+      <img class="card-img-top animate animate__bounceOut" src="slide2.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title fs-5">Sports Society</h5>
+        <p class="card-text">Encourages physical fitness and team spirit through various sports activities</p>
+        <a href="#" class="btn btn-secondary">Contact</a>
+      </div>
+
+    </div>
+  </div>
+  <div class="cards mt-5 container">
+    <div class="card border border-dark w-25">
+      <img class="card-img-top animate animate__bounceOut" src="Slide 3.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title fs-5">Culture Society</h5>
+        <p class="card-text">Celebrates diversity by organizing cultural events and fostering social harmony</p>
+        <a href="#" class="btn btn-secondary">Contact</a>
+      </div>
+    </div>
+    <div class="card border border-dark w-25">
+      <img class="card-img-top animate animate__bounceOut" src="slide1.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title fs-5">ACM Society</h5>
+        <p class="card-text">Advances computing as a science and a profession with collaborative projects</p>
+        <a href="#" class="btn btn-secondary">Contact</a>
+      </div>
+
+    </div>
+    <div class="card border border-dark w-25">
+      <img class="card-img-top animate animate__bounceOut" src="Slide4.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title fs-5">Naat Society</h5>
+        <p class="card-text">Devoted to religious and spiritual activities, especially the recitation of Naat</p>
+        <a href="#" class="btn btn-secondary">Contact</a>
+      </div>
+
+    </div>
+  </div>
+  <!--Performer-->
+  <!--Heads-->
+  <div class="d-flex justify-content-center align-items-center mt-5 mb-5 vh-25">
+    <h1 class="display-5 fw-bold text-white animate__heartBeat">Heads</h1>
+  </div>
+
+  <div class="head ms-5 me-5">
+    <div class="card bg-transparent border-0 text-center w-25 mx-auto">
+      <!-- Circular Image -->
+      <img src="img1.avif" class="rounded-circle mx-auto d-block mt-3" alt="Member Image"
+        style="width: 150px; height: 150px; object-fit: cover;">
+
+      <!-- Card Body with Designation -->
+      <div class="card-body">
+        <h5 class="card-title text-white">Umair</h5> <!-- Name -->
+        <p class="card-text text-warning">Chairman IEEE Society</p>
+      </div>
+    </div>
+    <div class="card bg-transparent border-0 text-center  w-25 mx-auto">
+      <!-- Circular Image -->
+      <img src="img2.avif" class="rounded-circle mx-auto d-block mt-3" alt="Member Image"
+        style="width: 150px; height: 150px; object-fit: cover;">
+
+      <!-- Card Body with Designation -->
+      <div class="card-body">
+        <h5 class="card-title text-white">Ali Rehman</h5> <!-- Name -->
+        <p class="card-text text-warning">Chairman Naat Society</p>
+      </div>
+    </div>
+    <div class="card bg-transparent border-0 text-center  w-25 mx-auto">
+      <!-- Circular Image -->
+      <img src="img3.avif" class="rounded-circle mx-auto d-block mt-3" alt="Member Image"
+        style="width: 150px; height: 150px; object-fit: cover;">
+
+      <!-- Card Body with Designation -->
+      <div class="card-body">
+        <h5 class="card-title text-white">Ibrahim</h5> <!-- Name -->
+        <p class="card-text text-warning">Chairman CSS Society</p>
+      </div>
+    </div>
+    <div class="card bg-transparent border-0 text-center  w-25 mx-auto">
+      <!-- Circular Image -->
+      <img src="img4.avif" class="rounded-circle mx-auto d-block mt-3" alt="Member Image"
+        style="width: 150px; height: 150px; object-fit: cover;">
+
+      <!-- Card Body with Designation -->
+      <div class="card-body">
+        <h5 class="card-title text-white">Rida</h5> <!-- Name -->
+        <p class="card-text text-warning">Chairman ACM & Culture </p>
+      </div>
+    </div>
+    <div class="card bg-transparent border-0 text-center  w-25 mx-auto">
+      <!-- Circular Image -->
+      <img src="img5.avif" class="rounded-circle mx-auto d-block mt-3" alt="Member Image"
+        style="width: 150px; height: 150px; object-fit: cover;">
+
+      <!-- Card Body with Designation -->
+      <div class="card-body">
+        <h5 class="card-title text-white">Umer</h5> <!-- Name -->
+        <p class="card-text text-warning">Chairman Sports Society</p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!--Heads-->
+  <!--progress-bar-->
+  <div class="page-content page-container ms-5 mt-5" id="page-content">
+    <div class="padding">
+      <div class="row container d-flex justify-content-center">
+
+        <div class="col-xl-12">
+          <div class="card proj-progress-card">
+            <div class="card-block">
+              <div class="row">
+                <div class="col-xl-3 col-md-6">
+                  <h6>Completed Work</h6>
+                  <h5 class="m-b-30 f-w-700">532<span class="text-c-green m-l-10">+1.69%</span></h5>
+                  <div class="progress">
+                    <div class="progress-bar bg-c-red" style="width:25%"></div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                  <h6>Incomplete Work</h6>
+                  <h5 class="m-b-30 f-w-700">4,569<span class="text-c-red m-l-10">-0.5%</span></h5>
+                  <div class="progress">
+                    <div class="progress-bar bg-c-blue" style="width:65%"></div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                  <h6>Ongoing Work</h6>
+                  <h5 class="m-b-30 f-w-700">89%<span class="text-c-green m-l-10">+0.99%</span></h5>
+                  <div class="progress">
+                    <div class="progress-bar bg-c-green" style="width:85%"></div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                  <h6>Ongoing Digs</h6>
+                  <h5 class="m-b-30 f-w-700">365<span class="text-c-green m-l-10">+0.35%</span></h5>
+                  <div class="progress">
+                    <div class="progress-bar bg-c-yellow" style="width:45%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!--Progress-bar-->
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
+<footer>
+  <footer class="text-center bg-body-dark text-white">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f text-white"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter text-white"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google text-white"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram text-white"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin text-white"></i
+        ></a>
+        <!-- Github -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2020 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</footer>
+
+</html>
